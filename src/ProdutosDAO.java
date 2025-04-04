@@ -31,9 +31,9 @@ public class ProdutosDAO {
         prep.setInt(2, produto.getValor());
         prep.setString(3, produto.getStatus());
         prep.executeUpdate();
-        JOptionPane.showMessageDialog(null, "Produto cadastrado com sucesso!");
+        JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!"); // Mensagem de sucesso
     } catch (Exception e) {
-        JOptionPane.showMessageDialog(null, "Erro ao cadastrar produto: " + e.getMessage());
+        JOptionPane.showMessageDialog(null, "Erro ao cadastrar produto: " + e.getMessage()); // Mensagem de erro
     } finally {
         try {
             conn.close();
@@ -41,6 +41,8 @@ public class ProdutosDAO {
             JOptionPane.showMessageDialog(null, "Erro ao fechar conexão: " + e.getMessage());
         }
     }
+
+
 
 
     }
