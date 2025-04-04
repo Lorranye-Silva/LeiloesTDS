@@ -92,6 +92,8 @@ public class ProdutosDAO {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Erro ao fechar conexão: " + e.getMessage());
         }
+    
+
     }
 }
 public ArrayList<ProdutosDTO> listarVendas() {
